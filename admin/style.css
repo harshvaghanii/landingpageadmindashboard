@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+.nav-container {
+    display: flex;
+    background-color: aliceblue;
+    justify-content: center;
+}
+
+.status-selector {
+    width: 35%;
+    margin-right: 10%;
+}
+
+.lead-status {
+    width: 30%;
+    margin-right: 10%;
+    color: red;
+}
+
+.update-form {
+    display: flex;
+}
+
+.update-btn {
+    width: 20%;
+}
+
+.table-wrapper td,
+th {
+    border: 1px solid black;
+}
+
+.concern {
+    width: 50%;
+}
+
+.comment-box {
+    height: 50%;
+    margin-bottom: 20px;
+}

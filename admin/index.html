@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- Navbar Section -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Vedic Astro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Leads</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./deepdive.html">Deep Dive</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./subscribers.html">Subscribers</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Test Section -->
+
+    <!-- Leads Table section -->
+
+    <div class="table-wrapper my-3">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Lead ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email Address</th>
+                    <th scope="col">Contact Number</th>
+                    <th scope="col">Birth Date</th>
+                    <th scope="col">Birth Time</th>
+                    <th scope="col">Birth Place</th>
+                    <th scope="col">Lead Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">13618756twht962</th>
+                    <td>Harsh Vaghani</td>
+                    <td>harshvaghani98@gmail.com</td>
+                    <td>8369810663</td>
+                    <td>16/09/1998</td>
+                    <td>10:15 AM</td>
+                    <td>Rajkot, Gujarat</td>
+                    <td>
+                        <form action="" class="update-form">
+                            <div class="lead-status">
+                                <h6>Pending...</h6>
+                            </div>
+                            <select class="form-select status-selector">
+                                <option selected="true" disabled="disabled">Status</option>
+                                <option value="contacted">Contacted</option>
+                                <option value="notinterested">Interested</option>
+                                <option value="notinterested">Not Interested</option>
+                                <option value="notinterested">Purchased</option>
+                            </select>
+                            <button type="submit" class="btn btn-primary update-btn">Update</button>
+                        </form>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <!-- Bootstrap JS Link -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <!-- End of Bootstrap JS Link -->
+
+</body>
+
+</html>
