@@ -19,17 +19,18 @@ fetchSubscribers();
 
 const search = document.getElementById('subsearch');
 const err = document.getElementById('suberrmessage');
-
 search.addEventListener('input', () => {
+    let found = false;
     let info = document.getElementsByClassName('subinformation');
     Array.from(info).forEach(element => {
         let email = element.getElementsByTagName('td')[0].innerHTML;
         if (email.includes(search.value)) {
             element.style.display = "table-row";
-            err.style.display = 'none';
+            found = true;
         } else {
             element.style.display = "none";
-            err.style.display = 'block';
         }
     })
+    if (!found) err.style.display = "block";
+    else err.style.display = 'none';
 })
