@@ -6,6 +6,7 @@ const fetchSubscribers = async() => {
     data.forEach(element => {
         const tableBody = document.getElementById('subscriberRow')
         const newRow = document.createElement('tr');
+        newRow.classList.add('subinformation');
         newRow.innerHTML = `
             <th scope="row">${element.name}</th>
                 <td>${element.email}</td>
@@ -14,3 +15,21 @@ const fetchSubscribers = async() => {
     });
 }
 fetchSubscribers();
+
+
+const search = document.getElementById('subsearch');
+const err = document.getElementById('suberrmessage');
+
+search.addEventListener('input', () => {
+    let info = document.getElementsByClassName('subinformation');
+    Array.from(info).forEach(element => {
+        let email = element.getElementsByTagName('td')[0].innerHTML;
+        if (email.includes(search.value)) {
+            element.style.display = "table-row";
+            err.style.display = 'none';
+        } else {
+            element.style.display = "none";
+            err.style.display = 'block';
+        }
+    })
+})

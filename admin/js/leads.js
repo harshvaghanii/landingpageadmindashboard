@@ -6,8 +6,9 @@ const fetchLeads = async() => {
     data.forEach(element => {
         const tableBody = document.getElementById('leadRows')
         const newRow = document.createElement('tr');
+        newRow.classList.add('leadinformation');
         newRow.innerHTML = `
-            <th scope="row">${element._id}</th>
+                <td>${element._id}</td>
                 <td>${element.name}</td>
                 <td>${element.email}</td>
                 <td>${element.contactnumber}</td>

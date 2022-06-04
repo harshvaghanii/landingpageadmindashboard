@@ -40,3 +40,7 @@ th {
     height: 50%;
     margin-bottom: 20px;
 }
+
+#errmessage, #suberrmessage {
+    display: none;
+}
