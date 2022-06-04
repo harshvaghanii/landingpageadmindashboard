@@ -1,0 +1,2 @@
+const leads = "http://www.vedicastro.online/api/v1/user/api/v1/getallleads";
+const subscribers = "http://www.vedicastro.online/api/v1/subscriber/api/v1/getallsubscribers";
