@@ -1,4 +1,4 @@
-const url = "http://www.vedicastro.online/api/v1/user/api/v1/getallleads";
+const url = "http://www.vedicastro.co.in/api/v1/user/api/v1/getallleads";
 
 const fetchLeads = async() => {
     const response = await fetch(url);

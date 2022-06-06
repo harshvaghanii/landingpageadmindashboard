@@ -1,4 +1,4 @@
-const url = "http://www.vedicastro.online/api/v1/subscriber/api/v1/getallsubscribers";
+const url = "http://www.vedicastro.co.in/api/v1/subscriber/api/v1/getallsubscribers";
 const fetchSubscribers = async() => {
     const response = await fetch(url);
     const data = await response.json();
